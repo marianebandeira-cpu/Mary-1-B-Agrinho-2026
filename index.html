@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte - Futuro Sustentável</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f8f4;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+            url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1400&q=80');
+            background-size:cover;
+            background-position:center;
+            height:100vh;
+            color:white;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            background:rgba(0,0,0,.4);
+        }
+
+        .logo{
+            font-size:30px;
+            font-weight:bold;
+            color:#7CFC00;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#7CFC00;
+        }
+
+        .hero{
+            height:85%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            padding:20px;
+        }
+
+        .hero h1{
+            font-size:4rem;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:1.3rem;
+            max-width:800px;
+        }
+
+        .btn{
+            margin-top:25px;
+            background:#2E8B57;
+            color:white;
+            padding:15px 30px;
+            text-decoration:none;
+            border-radius:30px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#1e5f3b;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .titulo{
+            text-align:center;
+            margin-bottom:50px;
+            color:#1b5e20;
+            font-size:2.5rem;
+        }
+
+        .sobre{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+            align-items:center;
+        }
+
+        .sobre img{
+            width:100%;
+            border-radius:15px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card h3{
+            color:#2E8B57;
+            margin-bottom:15px;
+        }
+
+        .impacto{
+            background:#1b5e20;
+            color:white;
+        }
+
+        .numeros{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:30px;
+            text-align:center;
+        }
+
+        .numero{
+            background:rgba(255,255,255,.1);
+            padding:30px;
+            border-radius:15px;
+        }
+
+        .numero h2{
+            font-size:3rem;
+            color:#7CFC00;
+        }
+
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        @media(max-width:768px){
+
+            .hero h1{
+                font-size:2.5rem;
+            }
+
+            .sobre{
+                grid-template-columns:1fr;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+
+    <nav>
+        <div class="logo">🌱 AgroForte</div>
+
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>AgroForte – Futuro Sustentável</h1>
+        <p>
+            Bovinocultura sustentável que une produtividade,
+            bem-estar animal e preservação ambiental para
+            garantir um futuro mais verde para as próximas gerações.
+        </p>
+
+        <a href="#sobre" class="btn">Conheça Nosso Projeto</a>
+    </div>
+
+</header>
+
+<section id="sobre">
+
+    <h2 class="titulo">Bovinocultura Sustentável</h2>
+
+    <div class="sobre">
+
+        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1200&q=80" alt="Gado">
+
+        <div>
+            <h3>Produção com Responsabilidade</h3>
+
+            <p>
+                A AgroForte promove sistemas modernos de produção bovina,
+                buscando o equilíbrio entre eficiência econômica,
+                conservação dos recursos naturais e bem-estar animal.
+            </p>
+
+            <br>
+
+            <p>
+                Nossos projetos utilizam manejo sustentável das pastagens,
+                recuperação de áreas degradadas, proteção das nascentes
+                e tecnologias que reduzem impactos ambientais.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="sustentabilidade">
+
+    <h2 class="titulo">Nossas Práticas Sustentáveis</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🐄 Bem-estar Animal</h3>
+            <p>
+                Ambientes adequados, alimentação balanceada e manejo responsável.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Pastagem Rotacionada</h3>
+            <p>
+                Melhor aproveitamento do solo e recuperação natural da vegetação.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Gestão da Água</h3>
+            <p>
+                Uso eficiente dos recursos hídricos e proteção de nascentes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 Preservação Ambiental</h3>
+            <p>
+                Conservação de matas ciliares e áreas de reserva legal.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="impacto" id="impacto">
+
+    <h2 class="titulo" style="color:white;">
+        Impacto Positivo
+    </h2>
+
+    <div class="numeros">
+
+        <div class="numero">
+            <h2>500+</h2>
+            <p>Cabeças de Gado</p>
+        </div>
+
+        <div class="numero">
+            <h2>40%</h2>
+            <p>Economia de Água</p>
+        </div>
+
+        <div class="numero">
+            <h2>120 ha</h2>
+            <p>Área Preservada</p>
+        </div>
+
+        <div class="numero">
+            <h2>100%</h2>
+            <p>Compromisso Ambiental</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contato">
+
+    <h2 class="titulo">Entre em Contato</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📍 Localização</h3>
+            <p>Guarapuava - Paraná</p>
+        </div>
+
+        <div class="card">
+            <h3>📞 Telefone</h3>
+            <p>(42) 99999-9999</p>
+        </div>
+
+        <div class="card">
+            <h3>📧 E-mail</h3>
+            <p>contato@agroforte.com.br</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 AgroForte - Futuro Sustentável |
+        Produção e Meio Ambiente em Harmonia 🌱🐄
+    </p>
+</footer>
+
+</body>
+</html>
